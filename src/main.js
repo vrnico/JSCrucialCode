@@ -18,7 +18,7 @@ $(document).ready(function() {
     let searchDisplay = ("#search" + language);
     console.log("this is the searchdispay: " + searchDisplay);
     for (let i = 0; i < 5; i++){
-      $(searchDisplay).append('<li><a href="' + array[i].url + '">' + array[i].title + '</a></li>');
+      $(searchDisplay).append('<li><a href="' + array[i].url + '" target="_blank">' + array[i].title + '</a></li>');
     }
   }
 
