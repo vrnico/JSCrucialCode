@@ -1,3 +1,73 @@
 #searchDisplay {
   list-style: none;
 }
+
+.header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin-top: .5em;
+  font-size: 8em;
+  text-shadow: 2px 2px #ec9787;
+
+}
+
+.list-group {
+  padding-left: 1em;
+  list-style: none;
+}
+
+li {
+  padding: .25em;
+}
+
+.container {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(240,237,229, .7);
+  margin-top: .5em;
+  padding: 3em;
+
+}
+
+.body {
+ background-image: url('https://media.giphy.com/media/3GaLeo9VmHGSs/giphy.gif');
+ background-size: cover;
+}
+
+.langLabelJS {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #6ca0dc;
+}
+
+
+.langLabelCSharp {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #ec9787;
+}
+
+.langLabelHtml {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #bc6ca7;
+}
+
+
+.langLabelCSS {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #00a68c
+}
+
+.langLabelAndroid {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #bfd833;
+}
+
+
+.langLabelRuby {
+  margin-top: 1.5em;
+  font-size: 4em;
+  text-shadow: 2px 2px #e34132 ;
+}

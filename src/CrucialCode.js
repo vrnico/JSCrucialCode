@@ -5,10 +5,13 @@ export class CrucialCode {
     this.languageSearch = language;
 
   }
-
+  //displayData calls function from frontend
   searchLang(displayData){
+    const url = "http://hn.algolia.com/api/v1/search_by_date?query="
+    let search = this.languageSearch;
+    let suffix = "&hitsPerPage=100"
     $.ajax({
-       url: `http://hn.algolia.com/api/v1/search_by_date?query=javascript&hitsPerPage=100`,
+       url: (url + search + suffix),
        type: 'GET',
        data: {
          format: 'json'
@@ -21,7 +24,8 @@ export class CrucialCode {
 
            }
          }
-         displayData(test);
+         //displayData function only works if a success
+         displayData(test, search);
          console.log(test);
        },
        error: function() {
