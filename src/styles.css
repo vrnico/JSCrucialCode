@@ -17,7 +17,13 @@
   margin-top: .5em;
   font-size: 3em;
   text-shadow: 2px 2px #ec9787;
+  margin-left: .5em;
+margin-bottom: -.7em;
+}
 
+.desc {
+  background-color: rgb(240,237,229, .9);
+  padding: 2em;
 }
 
 .list-group {
@@ -95,4 +101,23 @@ body {
 
 .fullListDisplay {
   font-size: 10em;
+}
+
+#meetUps {
+  list-style: none;
+  padding: 3em;
+}
+
+#meetUps li {
+  margin-top: .5em;
+}
+
+.meetUpName a{
+  color: black;
+}
+
+.meetUpName a:hover{
+  color: black;
+  text-decoration: none;
+  text-shadow: 2px 2px #00a68c
 }

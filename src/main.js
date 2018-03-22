@@ -23,7 +23,7 @@ $(document).ready(function() {
   let displayMeetUps = function updateMeetUps(array){
     for (let i = 0; i < 10; i++) {
       console.log(array[i].name)
-      $('#meetUps').append('<li><a href="' + array[i].link + '" target="_blank">' + array[i].name + '</a></li>')
+      $('#meetUps').append('<li><h3 class="meetUpName"><a href="' + array[i].link + '" target="_blank">' + array[i].name + '</a></h3></li><div class="desc"><li>' + array[i].description+'</li></div>')
     }
   }
 
@@ -43,6 +43,7 @@ $(document).ready(function() {
     let newfullLanguage = new CrucialCode(event.target.id);
     newfullLanguage.searchLang(displayData, 50);
     $('.col-md-6').fadeOut();
+    $('.meetUpDisplay').fadeOut();
     $(displayID).fadeIn();
     console.log("div Id: " + divID);
     console.log("display id: " + displayID);
