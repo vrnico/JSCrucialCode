@@ -2,11 +2,13 @@
 import $ from 'jquery';
 export class CrucialCode {
   constructor(language){
+    this.shortList = 5;
+    this.longList = 50;
     this.languageSearch = language;
 
   }
   //displayData calls function from frontend
-  searchLang(displayData){
+  searchLang(displayData, listLength){
     const url = "http://hn.algolia.com/api/v1/search_by_date?query="
     let search = this.languageSearch;
     let suffix = "&hitsPerPage=100"
@@ -25,8 +27,7 @@ export class CrucialCode {
            }
          }
          //displayData function only works if a success
-         displayData(test, search);
-         console.log(test);
+         displayData(test, search, listLength);
        },
        error: function() {
        }

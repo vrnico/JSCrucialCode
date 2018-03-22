@@ -29,8 +29,19 @@ li {
 }
 
 .body {
+  height: 100%;
+  background-color: rgb(240,237,229, 0);
+}
+
+html {
+  min-height: 100%;
+}
+body {
  background-image: url('https://media.giphy.com/media/3GaLeo9VmHGSs/giphy.gif');
- background-size: cover;
+   -webkit-background-size: cover;
+ min-height: 100%;
+ overflow: scroll;
+
 }
 
 .langLabelJS {
@@ -46,7 +57,7 @@ li {
   text-shadow: 2px 2px #ec9787;
 }
 
-.langLabelHtml {
+.langLabelHTML {
   margin-top: 1.5em;
   font-size: 4em;
   text-shadow: 2px 2px #bc6ca7;
@@ -70,4 +81,8 @@ li {
   margin-top: 1.5em;
   font-size: 4em;
   text-shadow: 2px 2px #e34132 ;
+}
+
+.fullListDisplay {
+  font-size: 10em;
 }
