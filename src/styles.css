@@ -24,6 +24,7 @@ margin-bottom: -.7em;
 .desc {
   background-color: rgb(240,237,229, .9);
   padding: 2em;
+  border-radius: 2em;
 }
 
 .list-group {
@@ -114,6 +115,8 @@ body {
 
 .meetUpName a{
   color: black;
+  font-family: 'Oleo Script', cursive;
+  text-shadow: 2px 2px #6ca0dc
 }
 
 .meetUpName a:hover{

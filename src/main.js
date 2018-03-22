@@ -23,7 +23,7 @@ $(document).ready(function() {
   let displayMeetUps = function updateMeetUps(array){
     for (let i = 0; i < 10; i++) {
       console.log(array[i].name)
-      $('#meetUps').append('<li><h3 class="meetUpName"><a href="' + array[i].link + '" target="_blank">' + array[i].name + '</a></h3></li><div class="desc"><li>' + array[i].description+'</li></div>')
+      $('#meetUps').append('<li><h2 class="meetUpName"><a href="' + array[i].link + '" target="_blank">' + array[i].name + '</a></h3></li><div class="desc"><li>' + array[i].description+'</li></div>')
     }
   }
 
