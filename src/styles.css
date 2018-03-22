@@ -38,9 +38,10 @@ html {
 }
 body {
  background-image: url('https://media.giphy.com/media/3GaLeo9VmHGSs/giphy.gif');
-   -webkit-background-size: cover;
+ -webkit-background-size: cover;
  min-height: 100%;
  overflow: scroll;
+  background-attachment:fixed;
 
 }
 

@@ -18,7 +18,6 @@ $(document).ready(function() {
     let searchDisplay = ("#search" + language);
     for (let i = 0; i < results; i++){
       $(searchDisplay).append('<li><a href="' + array[i].url + '" target="_blank">' + array[i].title + '</a></li>');
-      console.log(i);
     }
   }
 
@@ -34,13 +33,12 @@ $(document).ready(function() {
 
   $('.fullList').click(function(event) {
     let divID = event.target.id + "Display";
-    let displayID = "#" + divID;
-    console.log(divID);
+    let displayID = "." + divID;
     let newfullLanguage = new CrucialCode(event.target.id);
     newfullLanguage.searchLang(displayData, 50);
-    $(event.target.id).removeClass("visible").addClass("fullListDisplay")
-    $('.visible').fadeOut();
+    $('.col-md-6').fadeOut();
     $(displayID).fadeIn();
+    console.log("div Id: " + divID);
     console.log("display id: " + displayID);
     console.log("crucialcode: " + event.target.id);
   })
