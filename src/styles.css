@@ -11,6 +11,15 @@
 
 }
 
+.meetUpHeader {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin-top: .5em;
+  font-size: 3em;
+  text-shadow: 2px 2px #ec9787;
+
+}
+
 .list-group {
   padding-left: 1em;
   list-style: none;

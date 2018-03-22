@@ -20,7 +20,12 @@ $(document).ready(function() {
       $(searchDisplay).append('<li><a href="' + array[i].url + '" target="_blank">' + array[i].title + '</a></li>');
     }
   }
-
+  let displayMeetUps = function updateMeetUps(array){
+    for (let i = 0; i < 10; i++) {
+      console.log(array[i].name)
+      $('#meetUps').append('<li><a href="' + array[i].link + '" target="_blank">' + array[i].name + '</a></li>')
+    }
+  }
 
 
   //new object doesn't provide output until API call is succesful
@@ -30,6 +35,7 @@ $(document).ready(function() {
   newCrucialCodeCsharp.searchLang(displayData, 5);
   newCrucialCodeHTML.searchLang(displayData, 5);
   newCrucialCodeCSS.searchLang(displayData, 5);
+  newCrucialCodeCSS.searchMeetUp(displayMeetUps);
 
   $('.fullList').click(function(event) {
     let divID = event.target.id + "Display";
